@@ -9,10 +9,10 @@ A modern and responsive SaaS landing page built with HTML5 and Tailwind CSS. Bic
 ## 📸 Screenshots
 
 ### Desktop View
-![Desktop Screenshot](./screenshots/desktop.png)
+![Desktop Screenshot](./screenshots/Desktop.png)
 
 ### Mobile View
-![Mobile Screenshot](./screenshots/mobile.png)
+![Mobile Screenshot](./screenshots/Mobile.png)
 
 ## ✨ Features
 
