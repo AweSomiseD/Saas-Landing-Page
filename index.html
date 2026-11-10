@@ -1,539 +1,834 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biccas | SaaS Landing Page</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-</head>
-<body class="px-10 md:m-0 md:p-0">
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="px-10 md:m-0 md:p-0">
     <!--Navbar-->
     <nav class="flex items-center justify-between md:px-24 py-8 bg-white">
-        <!-- Logo -->
-        <img src="./Assets/Logo/Biccas.svg" alt="Logo" class="hover:cursor-pointer">
-        <!-- Hamburger (mobile only) -->
-        <label for="menu-toggle" class="cursor-pointer text-3xl md:hidden block relative z-50">
-            <span class="hamburger block peer-checked:hidden">☰</span>
-            <span class="close hidden peer-checked:block">✕</span>
-            <input type="checkbox" id="menu-toggle" class="hidden peer" />
-        </label>
+      <!-- Logo -->
+      <img
+        src="./Assets/Logo/Biccas.svg"
+        alt="Logo"
+        class="hover:cursor-pointer"
+      />
+      <!-- Hamburger (mobile only) -->
+      <label
+        for="menu-toggle"
+        class="cursor-pointer text-3xl md:hidden block relative z-50"
+      >
+        <span class="hamburger block peer-checked:hidden">☰</span>
+        <span class="close hidden peer-checked:block">✕</span>
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+      </label>
 
-        <!-- Desktop Menu -->
-        <ul class="hidden md:flex items-center w-full">
-            <div class="flex gap-[60px] ml-[360px] items-center font-medium flex-grow">
-                <li class="font-semibold hover:cursor-pointer">Home</li>
-                <li class="hover:font-semibold hover:cursor-pointer text-gray-500 hover:text-black hover:underline">
-                    Product</li>
-                <li class="hover:font-semibold hover:cursor-pointer text-gray-500 hover:text-black hover:underline">FAQ
-                </li>
-                <li class="hover:font-semibold hover:cursor-pointer text-gray-500 hover:text-black hover:underline">Blog
-                </li>
-                <li class="hover:font-semibold hover:cursor-pointer text-gray-500 hover:text-black hover:underline">
-                    About Us</li>
-            </div>
-            <!-- Right corner items -->
-            <div class="flex gap-1 items-center font-medium">
-                <li
-                    class="hover:underline hover:cursor-pointer hover:bg-green-600 rounded-xl transition py-2 px-4 text-gray-500 hover:text-white">
-                    Login</li>
-                <li>
-                    <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-700 transition">
-                        Sign Up
-                    </a>
-                </li>
-            </div>
-        </ul>
-
-        <!-- Mobile Menu -->
-
-        <div class="hidden peer-checked:block absolute top-5 left-0 w-full bg-white shadow-md p-6 md:hidden">
-            <ul class="flex flex-col gap-1">
-                <li class="px-4 py-2">Home</li>
-                <li class="px-4 py-2">Product</li>
-                <li class="px-4 py-2">FAQ</li>
-                <li class="px-4 py-2">Blog</li>
-                <li class="px-4 py-2">About Us</li>
-                <li class="px-4 py-2">Log In</li>
-                <li>
-                    <a href="#"
-                        class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition inline-block w-fit">
-                        Sign Up
-                    </a>
-                </li>
-            </ul>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex items-center w-full">
+        <div
+          class="flex gap-[60px] ml-[360px] items-center font-medium flex-grow"
+        >
+          <li class="font-semibold hover:cursor-pointer">Home</li>
+          <li
+            class="hover:font-semibold hover:cursor-pointer text-gray-500 hover:text-black hover:underline"
+          >
+            Product
+          </li>
+          <li
+            class="hover:font-semibold hover:cursor-pointer text-gray-500 hover:text-black hover:underline"
+          >
+            FAQ
+          </li>
+          <li
+            class="hover:font-semibold hover:cursor-pointer text-gray-500 hover:text-black hover:underline"
+          >
+            Blog
+          </li>
+          <li
+            class="hover:font-semibold hover:cursor-pointer text-gray-500 hover:text-black hover:underline"
+          >
+            About Us
+          </li>
         </div>
+        <!-- Right corner items -->
+        <div class="flex gap-1 items-center font-medium">
+          <li
+            class="hover:underline hover:cursor-pointer hover:bg-green-600 rounded-xl transition py-2 px-4 text-gray-500 hover:text-white"
+          >
+            Login
+          </li>
+          <li>
+            <a
+              href="#"
+              class="bg-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-700 transition"
+            >
+              Sign Up
+            </a>
+          </li>
+        </div>
+      </ul>
+
+      <!-- Mobile Menu -->
+
+      <div
+        class="hidden peer-checked:block absolute top-5 left-0 w-full bg-white shadow-md p-6 md:hidden"
+      >
+        <ul class="flex flex-col gap-1">
+          <li class="px-4 py-2">Home</li>
+          <li class="px-4 py-2">Product</li>
+          <li class="px-4 py-2">FAQ</li>
+          <li class="px-4 py-2">Blog</li>
+          <li class="px-4 py-2">About Us</li>
+          <li class="px-4 py-2">Log In</li>
+          <li>
+            <a
+              href="#"
+              class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition inline-block w-fit"
+            >
+              Sign Up
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!--Section 1: Hero-->
 
-    <section class="flex flex-col-reverse md:flex-row items-center justify-center gap-10 py-8">
-        <div class="flex flex-col items-center text-center md:items-start gap-10">
-            <h1
-                class="font-medium text-2xl md:font-bold max-w-[30ch] md:text-7xl md:leading-[90px] md:max-w-[15ch] md:text-start">
-                We're here to Increase your Productivity</h1>
-            <img src="./Assets/Logo/section 2 decore under paragraph.png" alt="Decore Item" class="w-[479px]">
-            <p class="max-w-[45ch] text-xl text-start">Let's make your work more organized and easy using the Biccas
-                Dashboard
-                with many of the latest
-                features in managing work every day.</p>
-            <div class="flex gap-4 items-center">
-                <button
-                    class="p-4 bg-[#54BD95] rounded-4xl text-white font-semibold hover:bg-green-500 hover:cursor-pointer w-[150px]">Try
-                    Free trial</button>
-                <img src="./Assets/Iconly/Light/Play.svg" alt="Play Iconly" class="hover:cursor-pointer ml-10">
-                <a href="#" class="font-medium text-[#191A15] hover:cursor-pointer">View Demo</a>
-            </div>
+    <section
+      class="flex flex-col-reverse md:flex-row items-center justify-center gap-10 py-8"
+    >
+      <div class="flex flex-col items-center text-center md:items-start gap-10">
+        <h1
+          class="font-medium text-2xl md:font-bold max-w-[30ch] md:text-7xl md:leading-[90px] md:max-w-[15ch] md:text-start"
+        >
+          We're here to Increase your Productivity
+        </h1>
+        <img
+          src="./Assets/Logo/section 2 decore under paragraph.png"
+          alt="Decore Item"
+          class="w-[479px]"
+        />
+        <p class="max-w-[45ch] text-xl text-start">
+          Let's make your work more organized and easy using the Biccas
+          Dashboard with many of the latest features in managing work every day.
+        </p>
+        <div class="flex gap-4 items-center">
+          <button
+            class="p-4 bg-[#54BD95] rounded-4xl text-white font-semibold hover:bg-green-500 hover:cursor-pointer w-[150px]"
+          >
+            Try Free trial
+          </button>
+          <img
+            src="./Assets/Iconly/Light/Play.svg"
+            alt="Play Iconly"
+            class="hover:cursor-pointer ml-10"
+          />
+          <a href="#" class="font-medium text-[#191A15] hover:cursor-pointer"
+            >View Demo</a
+          >
         </div>
-        <div>
-            <img src="./Assets/Section 2 card.png" alt="Card Image">
-        </div>
+      </div>
+      <div>
+        <img src="./Assets/Section 2 card.png" alt="Card Image" />
+      </div>
     </section>
 
     <!--Section 2: Partners-->
 
     <section class="flex flex-col items-center text-center gap-8 my-16 px-6">
-        <h1 class="text-3xl md:text-4xl font-semibold">
-            More Than 25,000 Teams Use Biccas
-        </h1>
-        <img src="./Assets/Logo/Logo 1.svg" alt="Biccas Partner Logos" class="w-full max-w-5xl object-contain">
+      <h1 class="text-3xl md:text-4xl font-semibold">
+        More Than 25,000 Teams Use Biccas
+      </h1>
+      <p class="text-xs text-gray-400">(demo data)</p>
+      <img
+        src="./Assets/Logo/Logo 1.svg"
+        alt="Biccas Partner Logos"
+        class="w-full max-w-5xl object-contain"
+      />
     </section>
-
 
     <!--Section 3: Support-->
 
     <section class="flex flex-col lg:flex-row gap-10 px-10 py-16 bg-[#F9F8FE]">
-        <!-- Left side content -->
-        <div class="flex flex-col justify-center lg:w-1/2 text-start space-y-6">
-            <h1 class="text-4xl lg:text-5xl font-semibold leading-tight">
-                How we support our partners all over the world
-            </h1>
-            <p class="text-gray-600 leading-[30px]">
-                SaaS become a common delivery model for many business application, including office software, messaging
-                software, payroll processing software, DBMS software, management software
+      <!-- Left side content -->
+      <div class="flex flex-col justify-center lg:w-1/2 text-start space-y-6">
+        <h1 class="text-4xl lg:text-5xl font-semibold leading-tight">
+          How we support our partners all over the world
+        </h1>
+        <p class="text-gray-600 leading-[30px]">
+          SaaS become a common delivery model for many business application,
+          including office software, messaging software, payroll processing
+          software, DBMS software, management software
+        </p>
+        <!-- Ratings Row -->
+        <div class="flex items-center gap-10 mt-4">
+          <div class="flex items-center gap-3 flex-col">
+            <img
+              src="./Assets/Star Rattings 4.9.svg"
+              alt="4.9 Rating"
+              class="w-24"
+            />
+            <div>
+              <p class="font-medium">4.9/5 Rating</p>
+              <p class="text-gray-600 text-sm">Databricks</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 flex-col">
+            <img
+              src="./Assets/Star Rattings 4.8.svg"
+              alt="4.8 Rating"
+              class="w-24"
+            />
+            <div>
+              <p class="font-medium">4.8/5 Rating</p>
+              <p class="text-gray-600 text-sm">Chainalysis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side content -->
+
+      <div class="flex flex-col gap-6 lg:w-1/2">
+        <div
+          class="flex items-start gap-4 bg-[#F9F8FE] rounded-2xl hover:shadow-lg transition"
+        >
+          <img
+            src="./Assets/Logo/Publishing logo 1.svg"
+            alt="Publishing logo"
+            class="w-12 h-12 m-5 bg-white"
+          />
+          <div>
+            <h2 class="text-xl font-bold">Publishing</h2>
+            <p class="text-gray-600 text-sm leading-relaxed max-w-[41ch]">
+              Plan, collaborate, and publish your content that drives meaningful
+              engagement and growth for your brand.
             </p>
-            <!-- Ratings Row -->
-            <div class="flex items-center gap-10 mt-4">
-                <div class="flex items-center gap-3 flex-col">
-                    <img src="./Assets/Star Rattings 4.9.svg" alt="4.9 Rating" class="w-24" />
-                    <div>
-                        <p class="font-medium">4.9/5 Rating</p>
-                        <p class="text-gray-600 text-sm">Databricks</p>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3 flex-col">
-                    <img src="./Assets/Star Rattings 4.8.svg" alt="4.8 Rating" class="w-24" />
-                    <div>
-                        <p class="font-medium">4.8/5 Rating</p>
-                        <p class="text-gray-600 text-sm">Chainalysis</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <!-- Right side content -->
-
-        <div class="flex flex-col gap-6 lg:w-1/2">
-            <div class="flex items-start gap-4 bg-[#F9F8FE] rounded-2xl hover:shadow-lg transition">
-                <img src="./Assets/Logo/Publishing logo 1.svg" alt="Publishing logo" class="w-12 h-12 m-5 bg-white" />
-                <div>
-                    <h2 class="text-xl font-bold">Publishing</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed max-w-[41ch]">
-                        Plan, collaborate, and publish your content that drives meaningful engagement and growth for
-                        your brand.
-                    </p>
-                </div>
-            </div>
-            <div class="flex items-start gap-4 bg-[#F9F8FE] rounded-2xl hover:shadow-lg transition">
-                <img src="./Assets/Logo/Analytics logo 2.svg" alt="Analytics logo" class="w-12 h-12 m-5 bg-white" />
-                <div>
-                    <h2 class="text-xl font-bold">Analytics</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed max-w-[41ch]">
-                        Analyze your performance and create gorgeous reports.
-                    </p>
-                </div>
-            </div>
-            <div class="flex items-start gap-4 bg-[#F9F8FE] rounded-2xl hover:shadow-lg transition">
-                <img src="./Assets/Logo/Engagement logo 3.svg" alt="Engagement logo" class="w-12 h-12 m-5 bg-white" />
-                <div>
-                    <h2 class="text-xl font-bold">Engagement</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed max-w-[41ch]">
-                        Quickly navigate and engage with your audience.
-                    </p>
-                </div>
-            </div>
+        <div
+          class="flex items-start gap-4 bg-[#F9F8FE] rounded-2xl hover:shadow-lg transition"
+        >
+          <img
+            src="./Assets/Logo/Analytics logo 2.svg"
+            alt="Analytics logo"
+            class="w-12 h-12 m-5 bg-white"
+          />
+          <div>
+            <h2 class="text-xl font-bold">Analytics</h2>
+            <p class="text-gray-600 text-sm leading-relaxed max-w-[41ch]">
+              Analyze your performance and create gorgeous reports.
+            </p>
+          </div>
         </div>
+        <div
+          class="flex items-start gap-4 bg-[#F9F8FE] rounded-2xl hover:shadow-lg transition"
+        >
+          <img
+            src="./Assets/Logo/Engagement logo 3.svg"
+            alt="Engagement logo"
+            class="w-12 h-12 m-5 bg-white"
+          />
+          <div>
+            <h2 class="text-xl font-bold">Engagement</h2>
+            <p class="text-gray-600 text-sm leading-relaxed max-w-[41ch]">
+              Quickly navigate and engage with your audience.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Section 4: Features heading-->
 
-    <section class="flex flex-col lg:flex-row items-center justify-around gap-8 pt-20 pb-16 px-8">
-        <h1 class="text-4xl lg:text-5xl font-semibold max-w-[13ch] text-center lg:text-left">
-            Our Features you can get
-        </h1>
-        <p class="font-light text-gray-600 max-w-[45ch] text-center lg:text-left lg:-ml-[100px]">
-            We offer a variety of interesting features that can help you increase your
-            productivity at work and manage your projects easily.
-        </p>
-        <button
-            class="bg-green-600 text-white px-6 py-3 rounded-3xl hover:bg-green-700 transition cursor-pointer lg:-ml-[60px]">
-            Get Started
-        </button>
+    <section
+      class="flex flex-col lg:flex-row items-center justify-around gap-8 pt-20 pb-16 px-8"
+    >
+      <h1
+        class="text-4xl lg:text-5xl font-semibold max-w-[13ch] text-center lg:text-left"
+      >
+        Our Features you can get
+      </h1>
+      <p
+        class="font-light text-gray-600 max-w-[45ch] text-center lg:text-left lg:-ml-[100px]"
+      >
+        We offer a variety of interesting features that can help you increase
+        your productivity at work and manage your projects easily.
+      </p>
+      <button
+        class="bg-green-600 text-white px-6 py-3 rounded-3xl hover:bg-green-700 transition cursor-pointer lg:-ml-[60px]"
+      >
+        Get Started
+      </button>
     </section>
-
 
     <!--Section 5: Features-->
-    <section class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-16 py-16 px-6">
-        <!-- Feature 1 -->
-        <div class="flex flex-col items-center md:items-start text-center md:text-start max-w-[364px]">
-            <img src="./Assets/Features IMG/Feature 1.png" alt="Collaboration Teams"
-                class="w-[364px] h-[430px] object-cover mb-6">
-            <h1 class="text-2xl font-semibold mb-2 text-center md:text-start">Collaboration Teams</h1>
-            <p class="font-light text-gray-600">
-                Here you can handle projects together with your team virtually.
-            </p>
-        </div>
-        <!-- Feature 2 -->
-        <div class="flex flex-col items-center md:items-start text-center md:text-start max-w-[364px]">
-            <img src="./Assets/Features IMG/Feature 2.png" alt="Cloud Storage"
-                class="w-[364px] h-[430px] object-cover mb-6">
-            <h1 class="text-2xl font-semibold mb-2 text-center md:text-start">Cloud Storage</h1>
-            <p class="font-light text-gray-600">
-                No need to worry about storage because we provide storage up to 2 TB.
-            </p>
-        </div>
-        <!-- Feature 3 -->
-        <div class="flex flex-col items-center md:items-start text-center md:text-start max-w-[364px]">
-            <img src="./Assets/Features IMG/Feature 3.png" alt="Daily Analytics"
-                class="w-[364px] h-[430px] object-cover mb-6">
-            <h1 class="text-2xl font-semibold mb-2 text-center md:text-start">Daily Analytics</h1>
-            <p class="font-light text-gray-600">
-                We always provide useful information to make it easier for you every day.
-            </p>
-        </div>
+    <section
+      class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-16 py-16 px-6"
+    >
+      <!-- Feature 1 -->
+      <div
+        class="flex flex-col items-center md:items-start text-center md:text-start max-w-[364px]"
+      >
+        <img
+          src="./Assets/Features IMG/Feature 1.png"
+          alt="Collaboration Teams"
+          class="w-[364px] h-[430px] object-cover mb-6"
+        />
+        <h1 class="text-2xl font-semibold mb-2 text-center md:text-start">
+          Collaboration Teams
+        </h1>
+        <p class="font-light text-gray-600">
+          Here you can handle projects together with your team virtually.
+        </p>
+      </div>
+      <!-- Feature 2 -->
+      <div
+        class="flex flex-col items-center md:items-start text-center md:text-start max-w-[364px]"
+      >
+        <img
+          src="./Assets/Features IMG/Feature 2.png"
+          alt="Cloud Storage"
+          class="w-[364px] h-[430px] object-cover mb-6"
+        />
+        <h1 class="text-2xl font-semibold mb-2 text-center md:text-start">
+          Cloud Storage
+        </h1>
+        <p class="font-light text-gray-600">
+          No need to worry about storage because we provide storage up to 2 TB.
+        </p>
+      </div>
+      <!-- Feature 3 -->
+      <div
+        class="flex flex-col items-center md:items-start text-center md:text-start max-w-[364px]"
+      >
+        <img
+          src="./Assets/Features IMG/Feature 3.png"
+          alt="Daily Analytics"
+          class="w-[364px] h-[430px] object-cover mb-6"
+        />
+        <h1 class="text-2xl font-semibold mb-2 text-center md:text-start">
+          Daily Analytics
+        </h1>
+        <p class="font-light text-gray-600">
+          We always provide useful information to make it easier for you every
+          day.
+        </p>
+      </div>
     </section>
-
 
     <!--Section 6: Benefits-->
 
     <section class="flex flex-col md:flex-row justify-around gap-12 py-16">
-        <!-- Text Section -->
-        <div class="flex flex-col gap-6 max-w-[400px]">
-            <h1 class="text-5xl font-semibold mb-10">What Benefit Will You Get</h1>
-            <ul class="flex flex-col gap-4 text-gray-700">
-                <li class="flex items-center gap-3">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5">
-                    <p>Free Consulting With Expert Saving Money</p>
-                </li>
-                <li class="flex items-center gap-3">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5">
-                    <p>Online Banking</p>
-                </li>
-                <li class="flex items-center gap-3">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5">
-                    <p>Investment Report Every Month</p>
-                </li>
-                <li class="flex items-center gap-3">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5">
-                    <p>Saving Money For The Future</p>
-                </li>
-                <li class="flex items-center gap-3">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5">
-                    <p>Online Transaction</p>
-                </li>
-            </ul>
-        </div>
-        <!-- Image Section -->
-        <div class="relative">
-            <img src="./Assets/laptop picture Benifit section 6.png" alt="Laptop picture focusing with blur mug"
-                class="w-[450px] h-[429px] object-fill">
-            <img src="./Assets/Benifit Section/Absolute decore image 1 top.png" alt="Amanda Young"
-                class="absolute top-6 -left-[130px] hidden md:block">
-            <img src="./Assets/Benifit Section/Absolute decore img 2 top right mid.png" alt="Total income $245"
-                class="absolute top-25 -right-18 hidden md:block">
-            <img src="./Assets/Benifit Section/Absolute decore img 3 left mid.png" alt="Decore Item"
-                class="absolute top-1/2 -left-16 hidden md:block">
-            <img src="./Assets/Benifit Section/Absolute decore img 4 left bottom.png" alt="Money Transfer Successful"
-                class="absolute -bottom-7 -left-20 hidden md:block">
-
-        </div>
+      <!-- Text Section -->
+      <div class="flex flex-col gap-6 max-w-[400px]">
+        <h1 class="text-5xl font-semibold mb-10">What Benefit Will You Get</h1>
+        <ul class="flex flex-col gap-4 text-gray-700">
+          <li class="flex items-center gap-3">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            <p>Free Consulting With Expert Saving Money</p>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            <p>Online Banking</p>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            <p>Investment Report Every Month</p>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            <p>Saving Money For The Future</p>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            <p>Online Transaction</p>
+          </li>
+        </ul>
+      </div>
+      <!-- Image Section -->
+      <div class="relative">
+        <img
+          src="./Assets/laptop picture Benifit section 6.png"
+          alt="Laptop picture focusing with blur mug"
+          class="w-[450px] h-[429px] object-fill"
+        />
+        <img
+          src="./Assets/Benifit Section/Absolute decore image 1 top.png"
+          alt="Amanda Young"
+          class="absolute top-6 -left-[130px] hidden md:block"
+        />
+        <img
+          src="./Assets/Benifit Section/Absolute decore img 2 top right mid.png"
+          alt="Total income $245"
+          class="absolute top-25 -right-18 hidden md:block"
+        />
+        <img
+          src="./Assets/Benifit Section/Absolute decore img 3 left mid.png"
+          alt="Decore Item"
+          class="absolute top-1/2 -left-16 hidden md:block"
+        />
+        <img
+          src="./Assets/Benifit Section/Absolute decore img 4 left bottom.png"
+          alt="Money Transfer Successful"
+          class="absolute -bottom-7 -left-20 hidden md:block"
+        />
+      </div>
     </section>
 
     <!--Section 7: Pricing heading-->
 
-    <section class="flex flex-col items-center justify-center text-center py-16 px-6">
-        <!-- Heading -->
-        <h1 class="text-4xl md:text-5xl font-semibold max-w-[20ch] leading-tight mb-4">
-            Choose Plan <br /> That's Right For You
-        </h1>
-        <!-- Description -->
-        <p class="text-gray-500 mb-8">
-            Choose plan that works best for you, feel free to contact us
-        </p>
-        <!-- Buttons -->
-        <div class="flex gap-0 bg-amber-50 p-2 shadow-lg">
-            <!-- Monthly Bill -->
-            <button
-                class="px-6 py-2 rounded-xl bg-white border-gray-300 text-gray-700 hover:bg-green-600 hover:text-white transition">
-                Monthly Bill
-            </button>
-            <!-- Yearly Bill -->
-            <button
-                class="px-6 py-2 rounded-xl bg-white border-gray-300 text-gray-700 hover:bg-green-600 hover:text-white transition">
-                Yearly Bill
-            </button>
-        </div>
+    <section
+      class="flex flex-col items-center justify-center text-center py-16 px-6"
+    >
+      <!-- Heading -->
+      <h1
+        class="text-4xl md:text-5xl font-semibold max-w-[20ch] leading-tight mb-4"
+      >
+        Choose Plan <br />
+        That's Right For You
+      </h1>
+      <!-- Description -->
+      <p class="text-gray-500 mb-8">
+        Choose plan that works best for you, feel free to contact us
+      </p>
+      <!-- Buttons -->
+      <div class="flex gap-0 bg-amber-50 p-2 shadow-lg">
+        <!-- Monthly Bill -->
+        <button
+          class="px-6 py-2 rounded-xl bg-white border-gray-300 text-gray-700 hover:bg-green-600 hover:text-white transition"
+        >
+          Monthly Bill
+        </button>
+        <!-- Yearly Bill -->
+        <button
+          class="px-6 py-2 rounded-xl bg-white border-gray-300 text-gray-700 hover:bg-green-600 hover:text-white transition"
+        >
+          Yearly Bill
+        </button>
+      </div>
     </section>
 
     <!--Section 8: Pricing plans-->
 
-    <section class="flex flex-col md:flex-row justify-center items-stretch gap-10 py-6 px-6 w-full">
-        <!-- Free Plan -->
-        <div
-            class="flex flex-col items-center text-center rounded-2xl p-8 transition hover:bg-green-500 hover:scale-100 hover:shadow-xl group">
-            <h1 class="text-3xl font-semibold mb-2 transition group-hover:text-white"> Free </h1>
-            <p class="text-gray-600 mb-4 transition group-hover:text-white max-w-[25ch]"> Have a go and test your
-                superpowers </p>
-            <p class="text-4xl font-semibold mb-6 transition-all duration-300 group-hover:text-white relative">
-                <img src="./Assets/$.svg" alt="Dollar" class="absolute h-[30px] w-[15px] -left-5 bg-white">0
-            </p>
-            <ul
-                class="w-full flex flex-col text-start md:gap-3 pb-6 bg-gray-50 group-hover:bg-white group-hover:text-black">
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition"> <img src="./Assets/Tick Svg.svg"
-                        alt="Tick" class="w-5 h-5" /> 2 Users </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition"> <img src="./Assets/Tick Svg.svg"
-                        alt="Tick" class="w-5 h-5" /> 2 Files </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition"> <img src="./Assets/Tick Svg.svg"
-                        alt="Tick" class="w-5 h-5" /> Public Share & Comments </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition"> <img src="./Assets/Tick Svg.svg"
-                        alt="Tick" class="w-5 h-5" /> Chat Support </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition"> <img src="./Assets/Tick Svg.svg"
-                        alt="Tick" class="w-5 h-5" /> New income apps </li>
-                <button
-                    class="self-center rounded-xl border w-[150px] h-[50px] items-center cursor-pointer border-green-600 text-green-600 font-semibold transition-all duration-300 group-hover:bg-white group-hover:text-green-600">
-                    Signup For Free </button>
-            </ul>
-        </div>
-        <!-- Pro Plan -->
-        <div
-            class="flex flex-col items-center text-center rounded-2xl p-8 transition hover:bg-green-500 hover:scale-105 hover:shadow-xl group">
-            <h1 class="text-3xl font-semibold mb-2 transition-all duration-300 group-hover:text-white">
-                Pro
-            </h1>
-            <p class="text-gray-600 mb-4 transition-all duration-300 group-hover:text-white max-w-[22ch]">
-                Experiment the power of infinite possibilities
-            </p>
-            <p class="text-4xl font-semibold mb-2 transition-all duration-300 group-hover:text-white relative">
-                <img src="./Assets/$.svg" alt="Dollar" class="absolute h-[30px] w-[15px] -left-5 bg-white">8
-            </p>
-            <p
-                class="text-white bg-green-500 m-1 p-2 rounded-xl font-medium mb-6 transition-all duration-300 hover:bg-white hover:text-black border cursor-pointer">
-                Save $50 a year
-            </p>
-            <ul
-                class="w-full flex flex-col text-start md:gap-3 pb-6 bg-gray-50 group-hover:bg-white group-hover:text-black">
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> 4 Users
-                </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> All Apps
-                </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> Unlimited editable exports
-                </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> Folders and collaboration
-                </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> All incoming apps
-                </li>
-                <button
-                    class="self-center h-[50px] w-[150px] rounded-xl border cursor-pointer border-green-600 text-green-600 font-semibold transition-all duration-300 group-hover:bg-white group-hover:text-green-600">
-                    Go To Pro
-                </button>
-            </ul>
-        </div>
+    <section
+      class="flex flex-col md:flex-row justify-center items-stretch gap-10 py-6 px-6 w-full"
+    >
+      <!-- Free Plan -->
+      <div
+        class="flex flex-col items-center text-center rounded-2xl p-8 transition hover:bg-green-500 hover:scale-100 hover:shadow-xl group"
+      >
+        <h1
+          class="text-3xl font-semibold mb-2 transition group-hover:text-white"
+        >
+          Free
+        </h1>
+        <p
+          class="text-gray-600 mb-4 transition group-hover:text-white max-w-[25ch]"
+        >
+          Have a go and test your superpowers
+        </p>
+        <p
+          class="text-4xl font-semibold mb-6 transition-all duration-300 group-hover:text-white relative"
+        >
+          <img
+            src="./Assets/$.svg"
+            alt="Dollar"
+            class="absolute h-[30px] w-[15px] -left-5 bg-white"
+          />0
+        </p>
+        <ul
+          class="w-full flex flex-col text-start md:gap-3 pb-6 bg-gray-50 group-hover:bg-white group-hover:text-black"
+        >
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> 2
+            Users
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> 2
+            Files
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            Public Share & Comments
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> Chat
+            Support
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> New
+            income apps
+          </li>
+          <button
+            class="self-center rounded-xl border w-[150px] h-[50px] items-center cursor-pointer border-green-600 text-green-600 font-semibold transition-all duration-300 group-hover:bg-white group-hover:text-green-600"
+          >
+            Signup For Free
+          </button>
+        </ul>
+      </div>
+      <!-- Pro Plan -->
+      <div
+        class="flex flex-col items-center text-center rounded-2xl p-8 transition hover:bg-green-500 hover:scale-105 hover:shadow-xl group"
+      >
+        <h1
+          class="text-3xl font-semibold mb-2 transition-all duration-300 group-hover:text-white"
+        >
+          Pro
+        </h1>
+        <p
+          class="text-gray-600 mb-4 transition-all duration-300 group-hover:text-white max-w-[22ch]"
+        >
+          Experiment the power of infinite possibilities
+        </p>
+        <p
+          class="text-4xl font-semibold mb-2 transition-all duration-300 group-hover:text-white relative"
+        >
+          <img
+            src="./Assets/$.svg"
+            alt="Dollar"
+            class="absolute h-[30px] w-[15px] -left-5 bg-white"
+          />8
+        </p>
+        <p
+          class="text-white bg-green-500 m-1 p-2 rounded-xl font-medium mb-6 transition-all duration-300 hover:bg-white hover:text-black border cursor-pointer"
+        >
+          Save $50 a year
+        </p>
+        <ul
+          class="w-full flex flex-col text-start md:gap-3 pb-6 bg-gray-50 group-hover:bg-white group-hover:text-black"
+        >
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> 4
+            Users
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> All
+            Apps
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            Unlimited editable exports
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            Folders and collaboration
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> All
+            incoming apps
+          </li>
+          <button
+            class="self-center h-[50px] w-[150px] rounded-xl border cursor-pointer border-green-600 text-green-600 font-semibold transition-all duration-300 group-hover:bg-white group-hover:text-green-600"
+          >
+            Go To Pro
+          </button>
+        </ul>
+      </div>
 
-        <!-- Business Plan -->
-        <div
-            class="flex flex-col items-center text-center rounded-2xl p-8 transition hover:bg-green-500 hover:scale-105 hover:shadow-xl group">
-            <h1 class="text-3xl font-semibold mb-2 transition-all duration-300 group-hover:text-white">
-                Business
-            </h1>
-            <p class="text-gray-600 mb-4 transition-all duration-300 group-hover:text-white max-w-[25ch]">
-                Unveil new superpowers and join the Design League
-            </p>
-            <p class="text-4xl font-semibold mb-6 transition-all duration-300 group-hover:text-white relative">
-                <img src="./Assets/$.svg" alt="Dollar" class="absolute h-[30px] w-[15px] -left-5 bg-white">16
-            </p>
+      <!-- Business Plan -->
+      <div
+        class="flex flex-col items-center text-center rounded-2xl p-8 transition hover:bg-green-500 hover:scale-105 hover:shadow-xl group"
+      >
+        <h1
+          class="text-3xl font-semibold mb-2 transition-all duration-300 group-hover:text-white"
+        >
+          Business
+        </h1>
+        <p
+          class="text-gray-600 mb-4 transition-all duration-300 group-hover:text-white max-w-[25ch]"
+        >
+          Unveil new superpowers and join the Design League
+        </p>
+        <p
+          class="text-4xl font-semibold mb-6 transition-all duration-300 group-hover:text-white relative"
+        >
+          <img
+            src="./Assets/$.svg"
+            alt="Dollar"
+            class="absolute h-[30px] w-[15px] -left-5 bg-white"
+          />16
+        </p>
 
-            <ul
-                class="w-full flex flex-col text-start md:gap-3 pb-6 bg-gray-50 group-hover:bg-white group-hover:text-black">
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> All the features of pro plan
-                </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> Account Success Manager
-                </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> Single Sign-On (SSO)
-                </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> Co-conception program
-                </li>
-                <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
-                    <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> Collaboration - Soon
-                </li>
-                <button
-                    class="self-center h-[50px] w-[150px] rounded-xl border cursor-pointer border-green-600 text-green-600 font-semibold transition-all duration-300 group-hover:bg-white group-hover:text-green-600">
-                    Go To Business
-                </button>
-            </ul>
-        </div>
+        <ul
+          class="w-full flex flex-col text-start md:gap-3 pb-6 bg-gray-50 group-hover:bg-white group-hover:text-black"
+        >
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" /> All
+            the features of pro plan
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            Account Success Manager
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            Single Sign-On (SSO)
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            Co-conception program
+          </li>
+          <li class="flex items-center gap-3 py-2 px-4 rounded-lg transition">
+            <img src="./Assets/Tick Svg.svg" alt="Tick" class="w-5 h-5" />
+            Collaboration - Soon
+          </li>
+          <button
+            class="self-center h-[50px] w-[150px] rounded-xl border cursor-pointer border-green-600 text-green-600 font-semibold transition-all duration-300 group-hover:bg-white group-hover:text-green-600"
+          >
+            Go To Business
+          </button>
+        </ul>
+      </div>
     </section>
     <!--Section Footer-->
     <section class="bg-[#161C28]">
-        <!--Top Section-->
-        <div class="flex flex-col md:flex-row justify-center md:px-24 md:py-20 px-5 py-10 gap-5">
-            <!-- Left side -->
-            <div class="md:w-1/2 space-y-5 text-white w-full flex flex-col gap-7 pl-3.5">
-                <h1 class="text-5xl font-semibold max-w-[20ch]">People are Saying About Biccas</h1>
-                <p class="max-w-[45ch]">
-                    Everything you need to accept to payment and grow your money or manage anywhere on planet
-                </p>
-                <div>
-                    <img src="./Assets/Footer section 1 logos/Group 212.png" alt="Decore Item" class="mb-3">
-                    <p class="max-w-[50ch]">
-                        I am very helped by this E-wallet application, my days are very easy to use this
-                        application and it’s very helpful in my life, even I can pay in a short time 😍
-                    </p>
-                </div>
-                <p class="font-medium hover:underline">_ Aria Zinanrio</p>
-                <div class="flex flex-wrap justify-center md:justify-start items-center gap-4 sm:gap-3">
-                    <img src="./Assets/Footer section 1 logos/Logos pic 1.png" alt="logo pic 1"
-                        class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer">
-                    <img src="./Assets/Footer section 1 logos/Logos pic 2.png" alt="logo pic 2"
-                        class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer">
-                    <img src="./Assets/Footer section 1 logos/Logos pic 3.png" alt="logo pic 3"
-                        class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer">
-                    <img src="./Assets/Footer section 1 logos/Logos pic 4.png" alt="logo pic 4"
-                        class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer">
-                    <img src="./Assets/Footer section 1 logos/Logos pic 5.png" alt="logo pic 5"
-                        class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer">
-                </div>
-            </div>
-            <!-- Right side -->
-            <div class="md:w-1/2 bg-[#222938] md:px-[120px] px-6 py-8 md:py-10 rounded-xl space-y-6 text-white">
-                <!-- Top logo and heading -->
-                <div class="flex flex-col items-center text-center space-y-2">
-                    <img src="./Assets/Footer section 1 logos/Get Started logo.png" alt="Get Started Logo"
-                        class="w-[65px] h-[75px] sm:w-[72px] sm:h-[86px]">
-                    <h1 class="text-xl sm:text-2xl md:text-3xl font-semibold leading-tight whitespace-nowrap">
-                        Get Started
-                    </h1>
-                </div>
-                <!-- Email Section -->
-                <div class="space-y-1">
-                    <p class="font-medium text-base sm:text-lg text-left">Email</p>
-                    <input id="Email" type="email" placeholder="Enter Your Email"
-                        class="w-full border border-gray-300 rounded-lg p-3 text-black bg-white text-base focus:outline-none focus:ring-2 focus:ring-[#54BD95]" />
-                </div>
-                <!-- Message Section -->
-                <div class="space-y-1">
-                    <p class="font-medium text-base sm:text-lg text-left">Message!</p>
-                    <textarea id="Message" placeholder="What Are You Say ?"
-                        class="w-full border border-gray-300 rounded-lg p-3 h-20 text-black bg-white text-base resize-none focus:outline-none focus:ring-2 focus:ring-[#54BD95]"></textarea>
-                </div>
-                <!-- Button -->
-                <button
-                    class="bg-[#54BD95] text-white px-5 py-3 rounded-lg w-full h-[55px] sm:h-[60px] hover:bg-green-700 transition cursor-pointer text-lg font-medium">
-                    Request Demo
-                </button>
-                <!-- Text below button -->
-                <p class="text-white text-center md:text-end text-base hover:cursor-pointer">
-                    <span class="font-light">or</span> Start Free trial
-                </p>
-            </div>
+      <!--Top Section-->
+      <div
+        class="flex flex-col md:flex-row justify-center md:px-24 md:py-20 px-5 py-10 gap-5"
+      >
+        <!-- Left side -->
+        <div
+          class="md:w-1/2 space-y-5 text-white w-full flex flex-col gap-7 pl-3.5"
+        >
+          <h1 class="text-5xl font-semibold max-w-[20ch]">
+            People are Saying About Biccas
+          </h1>
+          <p class="max-w-[45ch]">
+            Everything you need to accept to payment and grow your money or
+            manage anywhere on planet
+          </p>
+          <div>
+            <img
+              src="./Assets/Footer section 1 logos/Group 212.png"
+              alt="Decore Item"
+              class="mb-3"
+            />
+            <p class="max-w-[50ch]">
+              I am very helped by this E-wallet application, my days are very
+              easy to use this application and it’s very helpful in my life,
+              even I can pay in a short time 😍
+            </p>
+          </div>
+          <p class="font-medium hover:underline">
+            — Aria Zinanrio
+            <span class="text-xs text-gray-400">(sample testimonial)</span>
+          </p>
+          <div
+            class="flex flex-wrap justify-center md:justify-start items-center gap-4 sm:gap-3"
+          >
+            <img
+              src="./Assets/Footer section 1 logos/Logos pic 1.png"
+              alt="logo pic 1"
+              class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer"
+            />
+            <img
+              src="./Assets/Footer section 1 logos/Logos pic 2.png"
+              alt="logo pic 2"
+              class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer"
+            />
+            <img
+              src="./Assets/Footer section 1 logos/Logos pic 3.png"
+              alt="logo pic 3"
+              class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer"
+            />
+            <img
+              src="./Assets/Footer section 1 logos/Logos pic 4.png"
+              alt="logo pic 4"
+              class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer"
+            />
+            <img
+              src="./Assets/Footer section 1 logos/Logos pic 5.png"
+              alt="logo pic 5"
+              class="h-[60px] w-[60px] sm:h-[66px] sm:w-[66px] hover:cursor-pointer"
+            />
+          </div>
         </div>
-        <!--Section Footer Mid-->
-        <section class="bg-[#161C28] text-white px-6 py-10 md:px-24 md:py-16">
-            <div class="flex flex-col md:flex-row justify-between gap-10 w-full">
-                <!-- Left Side -->
-                <div class="flex flex-col items-start space-y-3 w-full md:w-[40%]">
-                    <!-- Logo -->
-                    <img src="./Assets/Logo/Biccas.svg" alt="Biccas" class="w-24">
-                    <!-- Subtext -->
-                    <p class="text-gray-300 text-sm">Get started now try our product</p>
-                    <!-- Input + Button -->
-                    <div
-                        class="flex items-center border border-gray-500 rounded-full overflow-hidden w-full max-w-[320px]">
-                        <input type="email" placeholder="Enter your email here"
-                            class="flex-grow bg-transparent text-sm text-white placeholder-gray-400 px-4 py-2 focus:outline-none" />
-                        <button
-                            class="bg-[#54BD95] flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full mr-1 hover:bg-green-600 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" class="w-5 h-5 text-white">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 12h14m-7-7l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Right Side -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full md:pl-20 md:w-[55%]">
-                    <!-- Column 1 -->
-                    <div>
-                        <h1 class="font-semibold text-lg mb-3 hover:cursor-pointer">Support</h1>
-                        <ul class="space-y-2 text-gray-300 text-sm">
-                            <li class="hover:cursor-pointer hover:text-white transition">Help centre</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">Account information</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">About</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">Contact us</li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 2 -->
-                    <div>
-                        <h1 class="font-semibold text-lg mb-3 hover:cursor-pointer">Help and Solution</h1>
-                        <ul class="space-y-2 text-gray-300 text-sm">
-                            <li class="hover:cursor-pointer hover:text-white transition">Talk to support</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">Support docs</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">System status</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">Covid response</li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 3 -->
-                    <div>
-                        <h1 class="font-semibold text-lg mb-3 hover:cursor-pointer">Product</h1>
-                        <ul class="space-y-2 text-gray-300 text-sm">
-                            <li class="hover:cursor-pointer hover:text-white transition">Update</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">Security</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">Beta test</li>
-                            <li class="hover:cursor-pointer hover:text-white transition">Pricing product</li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- Right side -->
+        <div
+          class="md:w-1/2 bg-[#222938] md:px-[120px] px-6 py-8 md:py-10 rounded-xl space-y-6 text-white"
+        >
+          <!-- Top logo and heading -->
+          <div class="flex flex-col items-center text-center space-y-2">
+            <img
+              src="./Assets/Footer section 1 logos/Get Started logo.png"
+              alt="Get Started Logo"
+              class="w-[65px] h-[75px] sm:w-[72px] sm:h-[86px]"
+            />
+            <h1
+              class="text-xl sm:text-2xl md:text-3xl font-semibold leading-tight whitespace-nowrap"
+            >
+              Get Started
+            </h1>
+          </div>
+          <!-- Email Section -->
+          <div class="space-y-1">
+            <p class="font-medium text-base sm:text-lg text-left">Email</p>
+            <input
+              id="Email"
+              type="email"
+              placeholder="Enter Your Email"
+              class="w-full border border-gray-300 rounded-lg p-3 text-black bg-white text-base focus:outline-none focus:ring-2 focus:ring-[#54BD95]"
+            />
+          </div>
+          <!-- Message Section -->
+          <div class="space-y-1">
+            <p class="font-medium text-base sm:text-lg text-left">Message!</p>
+            <textarea
+              id="Message"
+              placeholder="What Are You Say ?"
+              class="w-full border border-gray-300 rounded-lg p-3 h-20 text-black bg-white text-base resize-none focus:outline-none focus:ring-2 focus:ring-[#54BD95]"
+            ></textarea>
+          </div>
+          <!-- Button -->
+          <button
+            class="bg-[#54BD95] text-white px-5 py-3 rounded-lg w-full h-[55px] sm:h-[60px] hover:bg-green-700 transition cursor-pointer text-lg font-medium"
+          >
+            Request Demo
+          </button>
+          <!-- Text below button -->
+          <p
+            class="text-white text-center md:text-end text-base hover:cursor-pointer"
+          >
+            <span class="font-light">or</span> Start Free trial
+          </p>
+        </div>
+      </div>
+      <!--Section Footer Mid-->
+      <section class="bg-[#161C28] text-white px-6 py-10 md:px-24 md:py-16">
+        <div class="flex flex-col md:flex-row justify-between gap-10 w-full">
+          <!-- Left Side -->
+          <div class="flex flex-col items-start space-y-3 w-full md:w-[40%]">
+            <!-- Logo -->
+            <img src="./Assets/Logo/Biccas.svg" alt="Biccas" class="w-24" />
+            <!-- Subtext -->
+            <p class="text-gray-300 text-sm">Get started now try our product</p>
+            <!-- Input + Button -->
+            <div
+              class="flex items-center border border-gray-500 rounded-full overflow-hidden w-full max-w-[320px]"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email here"
+                class="flex-grow bg-transparent text-sm text-white placeholder-gray-400 px-4 py-2 focus:outline-none"
+              />
+              <button
+                class="bg-[#54BD95] flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full mr-1 hover:bg-green-600 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-5 h-5 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 12h14m-7-7l7 7-7 7"
+                  />
+                </svg>
+              </button>
             </div>
-        </section>
-        <!--End Footer Section -->
-        <section class="bg-[#161C28] text-gray-400 py-4 px-6 md:px-24 border-t border-gray-700">
-            <div class="flex flex-col md:flex-row items-center justify-between text-sm space-y-2 md:space-y-0">
-                <!-- Left Side -->
-                <footer>© 2022 Biccas Inc. All rights reserved</footer>
-                <!-- Right Side -->
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-white transition">Terms & Conditions</a>
-                    <span class="text-gray-500">•</span>
-                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                </div>
+          </div>
+
+          <!-- Right Side -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full md:pl-20 md:w-[55%]"
+          >
+            <!-- Column 1 -->
+            <div>
+              <h1 class="font-semibold text-lg mb-3 hover:cursor-pointer">
+                Support
+              </h1>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Help centre
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Account information
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  About
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Contact us
+                </li>
+              </ul>
             </div>
-        </section>
+
+            <!-- Column 2 -->
+            <div>
+              <h1 class="font-semibold text-lg mb-3 hover:cursor-pointer">
+                Help and Solution
+              </h1>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Talk to support
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Support docs
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  System status
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Covid response
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+              <h1 class="font-semibold text-lg mb-3 hover:cursor-pointer">
+                Product
+              </h1>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Update
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Security
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Beta test
+                </li>
+                <li class="hover:cursor-pointer hover:text-white transition">
+                  Pricing product
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Footer Section -->
+      <section
+        class="bg-[#161C28] text-gray-400 py-4 px-6 md:px-24 border-t border-gray-700"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between text-sm space-y-2 md:space-y-0"
+        >
+          <!-- Left Side -->
+          <footer>© 2026 Biccas (Demo Design). All rights reserved</footer>
+          <!-- Right Side -->
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white transition"
+              >Terms & Conditions</a
+            >
+            <span class="text-gray-500">•</span>
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          </div>
+        </div>
+      </section>
     </section>
-</body>
+  </body>
 </html>
